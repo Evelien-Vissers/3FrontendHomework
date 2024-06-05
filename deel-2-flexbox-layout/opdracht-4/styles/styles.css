@@ -1,1 +1,58 @@
-/*Schrijf hier jouw CSS*/
+/*Deelopdracht 4*/
+body, html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: row; /*Arrange nav and the main column side by side */
+    height: 100vh;
+}
+nav. {
+    display: flex;
+    flex: 0 0 30%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+header {
+    flex: 0 0 100px;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.inner-row {
+    display: flex;
+    flex: 1;
+}
+.inner-col {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+article {
+    flex: 1;
+    display: flex;
+}
+
+footer {
+    flex: 0 1 10%;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-basis: auto;
+    position: absolute; /*To overlap the footer*/
+    right: 0;
+    z-index: 2;
+}
