@@ -1,1 +1,52 @@
 /*Schrijf hier jouw CSS*/
+/*Deelopdracht 2*/
+body, html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: row; /*Arrange nav and the main column side by side */
+}
+nav {
+    display: flex;
+    flex: 0 0 300px; /* Fixed width for nav */
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-basis: auto;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+header {
+    flex: 0 0 100px;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+footer {
+    flex: 0 0 100px;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+main {
+    flex: 1; /*Takes remaining space in the column */
+    display: flex;
+    flex-direction: column;
+}
+article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+}
+
+
